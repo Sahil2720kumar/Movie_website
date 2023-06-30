@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/eruda.js"></script>
+	<script>eruda.init();</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Bootstrap CSS -->
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<!-- custom CSS -->
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Movie website</title>
+</head>
+<body>
+	<div class="main_container" >
+		<header>
+			<div class="header-content" >
+				<div class="row_div" >
+					<img src="images/logo.png" >
+					<div id="search_movie" >
+						<input id="search_movie_input"  type="text" placeholder="search..."   >
+						<span class="fas fa-search" ></span>
+					</div>
+					<img id="profile_img"  src="images/user.jpg" >
+				</div>
+				<div id="search_box_suggestion" >
+					<!--search items appear here-->	
+					<!--<div class="search_box_items" >
+						<img src="http://image.tmdb.org/t/p/w500/${movieList[i].poster_path}" >
+						<div class="movies_suggestion_info"  >
+						<h4>${movieList[i].title}</h4>
+						<p class="">${movie_genre_arr}<span style="padding:1px 2px;"  class="bg-warning mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>${movieList[i].vote_average.toFixed(1)}</span></p>
+						</div>
+					</div>-->		
+				</div>
+				<ul id="navbar_ul" >
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="movie.html" >Movies</a></li>
+					<li><a href="series.html" >Series</a></li>	
+					<li><a href="kids.html" >Kids</a></li>				
+				</ul>
+				<div class="poster_content" >
+					<h1>Squid Game</h1>
+					<p>Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.</p>
+					<span>A Netflix originals </span><span class="text-success " >Action</span><span style="padding:1px 2px;color: black; font-weight:bolder;"  class="bg-warning mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.0</span>
+					<button class="btn" >Watch<span style="margin-left:5px;"  class="fas fa-play" ></span></button>
+					<button class="btn "><span class="fas fa-download" ></span></button>
+				</div>
+
+				<section id="popular_section" class="" >
+					<h4>Popular Movies</h4>
+					<i class="fas fa-chevron-left chevron-left" ></i>
+					<i class="fas fa-chevron-right chevron-right" ></i>					
+					<div class="cards"  >
+<!--						<div class="card" >
+							<img src="images/ant man.jpg" >
+							<div class="rest_card" >
+								<img src="images/the boys1.jpg" >
+								<div class="rest_card_content" >
+									<p class="movie_name" >The ant man</p>
+									<div class="sub">
+										<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+										<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+									</div>
+								</div>
+							</div>
+						</div>	-->								
+					</div>
+				</section>				
+			</div>			
+		</header>
+		
+		<section id="trending_section" class="movie_series_section"  >
+			<h4>Now playing Movies</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+		
+		<section id="upcoming_section" class="movie_series_section"  >
+			<h4>Up coming Movies</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+		
+		<section id="toprated_section" class="movie_series_section"  >
+			<h4>Top rated Movies</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+		
+		<section id="series_popular_section" class="movie_series_section"  >
+			<h4>Popular Series</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+		
+		<section id="series_airingToday_section" class="movie_series_section"  >
+			<h4>Airing Today Series</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+		
+		<section id="series_onTheAir_section" class="movie_series_section"  >
+			<h4>On the air Series</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+		
+		<section id="series_TopRated_section" class="movie_series_section"  >
+			<h4>Top Rated Series</h4>
+			<i class="fas fa-chevron-left chevron-left" ></i>
+			<i class="fas fa-chevron-right chevron-right" ></i>					
+			<div class="cards" >
+				<!--<div class="card" >
+					<img src="images/ant man.jpg" >
+					<div class="rest_card" >
+						<img src="images/the boys1.jpg" >
+						<div class="rest_card_content" >
+							<p class="movie_name" >The ant man</p>
+							<div class="sub">
+								<span class="movie_genre" >Action,<span class="release_year" >2022</span></span>
+								<p class="rating" ><span style="padding:1px 2px;color: black; font-weight:bolder; background:RGB(255,233,0);"  class="mx-2 " >IMDP</span><span><i class="fas fa-star " ></i>8.9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>-->									
+			</div>
+		</section>
+
+	  <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 border-top bg-dark">
+	    <div class="col-md-4 d-flex align-items-center justify-content-between ">
+	      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+				<img style="width:120px; display:inline;"  src="images/logo.png" >
+	      </a>
+	      <span class="mb-3 mb-md-0 text-muted"> &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</span>
+	    </div>
+	  </footer>
+
+	</div>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- my JavaScript-->
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
