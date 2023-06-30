@@ -1,0 +1,152 @@
+header {
+	background-image:none;
+/*	border:2px solid red;*/
+	height:auto;
+}
+
+#ms_Info_Section{
+	padding:10px;
+}
+
+
+#ms_Info_Section .ms_image_fParent {
+	width:100%;
+	padding:10px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:20px;
+}
+
+#ms_Info_Section .ms_image_fParent .ms_image {
+	width:50%;
+	border-radius:20px;
+}
+
+#ms_Info_Section .ms_info_fParent {
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: column;
+	color:white;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_title {
+	text-transform:uppercase;
+	font-weight:1000;
+	letter-spacing:1px;
+	margin-bottom:10px;
+	
+}
+
+#ms_Info_Section .ms_info_fParent .ms_shortInfo  {
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	opacity:0.7;
+/*	border:2px solid red;*/
+}
+
+
+#ms_Info_Section .ms_info_fParent .ms_shortInfo span {
+	margin:0 5px;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_genre {
+	text-align:center;
+	opacity:0.7;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_overview {
+	text-align:center;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_overview .ms_overview_p{
+	opacity:0.7;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_starring .ms_actors {
+	opacity:0.7;
+	text-align:center;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_directors .director {
+	opacity:0.7;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_trailers {
+	width:100%;
+}
+
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items {
+	height:180px;
+	overflow:hidden;
+	padding:10px;
+	width:100%;
+	display:flex;
+	overflow-x:scroll;
+	
+}
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items::-webkit-scrollbar {
+  width: 2px;
+  background:rgba(250,250,250,0.3);
+  border-radius:5px;
+  visibility:hidden;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items::-webkit-scrollbar-thumb{
+  width: 2px;
+  background:rgba(250,250,250,0.3);
+  border-radius:5px;
+  visibility:hidden;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items:hover::-webkit-scrollbar-thumb{
+	visibility:visible;
+}
+
+
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items:hover::-webkit-scrollbar {
+	visibility:visible;
+}
+
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items .ms_tralier_item {
+	position:relative;
+	height:150px;
+	width:250px;
+	min-width:250px;
+	margin:5px;
+	background:linear-gradient(135deg,rgba(250,250,250,0.2),rgba(0,0,0,0.1));
+	backdrop-filter:blur(5px);
+	border-radius:20px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items .ms_tralier_item .ms_trailer_loader {
+	
+}
+
+
+#ms_Info_Section .ms_info_fParent .ms_trailers .ms_trailer_items .ms_tralier_item .ms_trailer_video {
+	height:150px;
+	width:250px;
+	min-width:250px;
+	border-radius:20px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	position:absolute;
+	z-index:9999;
+	background:url(../images/favicon.png) no-repeat center center/cover;
+	background-size:25px;
+}
+
+#similar_movie_section {
+	margin-top:10px;
+}
