@@ -116,9 +116,9 @@ async function specificMovieInfoFun(API,API_Actors,API_Trailers){
 
 let ms_id=parseInt(localStorage.getItem("movie_series_id"))
 let ms_media_type=localStorage.getItem("movie_series_media_type")
-let API_Details=fetch(`http://api.themoviedb.org/3/${ms_media_type}/${ms_id}?api_key=aced4205f5abc72469db0dcfa25a10bd`)
-let API_Actors_Details=fetch(`http://api.themoviedb.org/3/${ms_media_type}/${ms_id}/credits?api_key=aced4205f5abc72469db0dcfa25a10bd`)
-let API_Trailers=fetch(`http://api.themoviedb.org/3/${ms_media_type}/${ms_id}/videos?api_key=aced4205f5abc72469db0dcfa25a10bd`)
+let API_Details=fetch(`https://api.themoviedb.org/3/${ms_media_type}/${ms_id}?api_key=aced4205f5abc72469db0dcfa25a10bd`)
+let API_Actors_Details=fetch(`https://api.themoviedb.org/3/${ms_media_type}/${ms_id}/credits?api_key=aced4205f5abc72469db0dcfa25a10bd`)
+let API_Trailers=fetch(`https://api.themoviedb.org/3/${ms_media_type}/${ms_id}/videos?api_key=aced4205f5abc72469db0dcfa25a10bd`)
 
 specificMovieInfoFun(API_Details,API_Actors_Details,API_Trailers)
 
@@ -212,8 +212,8 @@ async function movieDisplayFun(API,section_cards){
 let similar_section=document.getElementById("similar_movie_section")
 let similar_section_cards=similar_section.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling
 /*let movieSimilarAPI=fetch(`https://api.themoviedb.org/3/${ms_media_type}/popular?api_key=aced4205f5abc72469db0dcfa25a10bd&page=5`)*/
-let movieSimilarAPI=fetch(`http://api.themoviedb.org/3/${ms_media_type}/${ms_id}/recommendations?api_key=aced4205f5abc72469db0dcfa25a10bd`)
-//console.log(`http://api.themoviedb.org/3/${ms_media_type}/${ms_id}/recommendations?api_key=aced4205f5abc72469db0dcfa25a10bd&include_adult=TRUE`)
+let movieSimilarAPI=fetch(`https://api.themoviedb.org/3/${ms_media_type}/${ms_id}/recommendations?api_key=aced4205f5abc72469db0dcfa25a10bd`)
+//console.log(`https://api.themoviedb.org/3/${ms_media_type}/${ms_id}/recommendations?api_key=aced4205f5abc72469db0dcfa25a10bd&include_adult=TRUE`)
 //console.log("above is url")
 movieDisplayFun(movieSimilarAPI,similar_section_cards)
 
