@@ -66,6 +66,6 @@ search_movie_input.addEventListener("keyup",(e)=>{
 		}
 	}
 	search_box_suggestion.innerHTML=""
-	let searchAPI=fetch("https://api.themoviedb.org/3/search/multi?api_key=aced4205f5abc72469db0dcfa25a10bd&include_adult=false&query="+e.target.value)
+	let searchAPI=fetch("https://api.themoviedb.org/3/search/multi?api_key=aced4205f5abc72469db0dcfa25a10bd&include_adult=true&query="+e.target.value)
 	searchMovie(searchAPI)
 })
